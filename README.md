@@ -20,6 +20,6 @@ This is a personal project where I am building a **restaurant website** using **
 - **Angular 18** - Frontend framework
 - **TypeScript** - Strongly typed programming language
 - **HTML5 & CSS3** - Markup and styling
-- **Angular Material - UI components and styling
+- **Angular Material ** - UI components and styling
 - **RxJS** - Reactive programming
 - **Google Maps API** - Display restaurant location
