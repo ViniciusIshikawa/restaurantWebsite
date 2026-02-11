@@ -1,27 +1,25 @@
-# RestaurantWebsite
+# Restaurant Website - Angular 18
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
+This is a personal project where I am building a **restaurant website** using **Angular 18**. The goal of this project is to create a responsive, modern, and interactive web application for restaurants to showcase their menu, location, and services.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Features
 
-## Code scaffolding
+- Responsive design for desktop, tablet, and mobile
+- Menu display with categories and prices
+- Contact form for reservations or inquiries
+- Integration with Google Maps to show restaurant location
+- Smooth navigation and animations using Angular
+- Easy-to-extend structure for future enhancements
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🛠️ Technologies Used
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Angular 18** - Frontend framework
+- **TypeScript** - Strongly typed programming language
+- **HTML5 & CSS3** - Markup and styling
+- **Angular Material - UI components and styling
+- **RxJS** - Reactive programming
+- **Google Maps API** - Display restaurant location
