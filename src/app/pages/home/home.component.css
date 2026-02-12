@@ -1,0 +1,22 @@
+.hero-section {
+  height: 100vh;
+  background-image: url('/assets/images/bg_heroSection.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: white;
+}
+
+.hero-section h1 {
+  color: var(--main-color);
+  margin: 0;
+}
+
+.hero-section .hero-section_presentation {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}

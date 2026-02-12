@@ -1,0 +1,12 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.toolbar {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.toolbar button {
+  color: white;
+}
