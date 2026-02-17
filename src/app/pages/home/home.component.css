@@ -69,3 +69,34 @@
   justify-content: center;
   align-items: center;
 }
+
+.menus {
+  width: 100%;
+}
+
+.menus .menus_options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.menus_options-breakfast, .menus_options-lunch, .menus_options-dinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  height: 80vh;
+}
+
+.menus .menus_options-breakfast {
+  width: 50%;
+}
+
+.menus .menus_options-lunch {
+  width: 25%;
+}
+
+.menus .menus_options-dinner {
+  width: 25%;
+}
