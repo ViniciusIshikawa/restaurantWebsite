@@ -100,3 +100,35 @@
 .menus .menus_options-dinner {
   width: 25%;
 }
+
+.contact .contact_form-maps {
+  display: flex;
+  flex: row;
+  align-items: center;
+}
+
+.contact {
+  text-align: center;
+  color: white;
+  background-color: var(--secondary-color);
+}
+
+.contact h1 {
+  margin: 0;
+  padding: 2rem 0;
+}
+
+.contact .contact_form-maps form, .contact .contact_form-maps .googleMaps {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.contact .contact_form-maps form {
+  flex-direction: column;
+  width: 50%;
+}
+
+.contact .contact_form-maps .googleMaps {
+  width: 50%;
+}
