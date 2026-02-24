@@ -1,0 +1,34 @@
+footer, .socialMedia, .pages {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+}
+
+footer {
+  color: white;
+  background-color: rgb(87, 86, 86);
+  padding: 1rem;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.pages {
+  gap: 0.5rem;
+}
+
+.pages a {
+  color: white;
+}
+
+.socialMedia {
+  gap: 1rem;
+}
+
+.socialMedia mat-icon {
+  width: 2rem;
+  height: 2rem;
+  color: black;
+}
