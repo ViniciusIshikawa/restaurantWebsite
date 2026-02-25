@@ -4,6 +4,10 @@ export const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'home'},
   {
     path:'home',
-    loadChildren: () => import('./pages/pages.routes').then(r => r.PAGES_ROUTES)
+    loadComponent: () => import('./pages/home/home.component').then(c => c.HomeComponent)
+  },
+  {
+    path: 'menu',
+    loadChildren: () => import('./pages/menu/menu.routes').then(r => r.MENU_ROUTES)
   }
 ];

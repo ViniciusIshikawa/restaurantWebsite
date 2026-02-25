@@ -1,0 +1,20 @@
+.cards-dinner {
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.cards-dinner mat-card {
+  width: 14rem;
+}
+
+.cards-dinner mat-card img {
+  width: 14rem;
+  height: 14rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
