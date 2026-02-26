@@ -9,5 +9,9 @@ export const routes: Routes = [
   {
     path: 'menu',
     loadChildren: () => import('./pages/menu/menu.routes').then(r => r.MENU_ROUTES)
+  },
+  {
+    path: 'about',
+    loadComponent: () => import('./pages/about/about.component').then(c => c.AboutComponent)
   }
 ];
