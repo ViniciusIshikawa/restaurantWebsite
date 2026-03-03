@@ -10,3 +10,8 @@
 .toolbar button {
   color: white;
 }
+
+.toolbar span a {
+  all: unset;
+  cursor: pointer;
+}

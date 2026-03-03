@@ -11,6 +11,11 @@ footer {
   padding: 1rem;
 }
 
+.restaurantLogo h2 a {
+  all: unset;
+  cursor: pointer;
+}
+
 .spacer {
   flex: 1 1 auto;
 }

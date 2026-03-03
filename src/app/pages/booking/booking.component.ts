@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, inject, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, inject, OnInit, ViewChild } from '@angular/core';
 import { CalendarOptions, DateSelectArg } from '@fullcalendar/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import { FullCalendarComponent, FullCalendarModule } from '@fullcalendar/angular';
@@ -16,7 +16,7 @@ import { DialogComponent } from './dialog/dialog.component';
   templateUrl: './booking.component.html',
   styleUrl: './booking.component.css'
 })
-export class BookingComponent implements AfterViewInit {
+export class BookingComponent implements OnInit, AfterViewInit {
   @ViewChild('calendar') calendarComponent!: FullCalendarComponent;
 
   isDisable:boolean = false;
@@ -34,6 +34,10 @@ export class BookingComponent implements AfterViewInit {
     initialDate: new Date(),
     events: []
   };
+
+  ngOnInit(): void {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
 
   ngAfterViewInit() {
     const calendarApi = this.calendarComponent.getApi();
