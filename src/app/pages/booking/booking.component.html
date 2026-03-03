@@ -1,0 +1,22 @@
+<main>
+  <h2 style="text-align:center;">Booking Calendar</h2>
+  <section class="booking">
+    <full-calendar #calendar [options]="calendarOptions"></full-calendar>
+    <div class="booking-hours">
+      <button id="button-9" (click)="openDialog('09:00')" class="booking-hours_button">09:00</button>
+      <button id="button-10" (click)="openDialog('10:00')" class="booking-hours_button">10:00</button>
+      <button id="button-11" (click)="openDialog('11:00')" class="booking-hours_button">11:00</button>
+      <button id="button-12" (click)="openDialog('12:00')" class="booking-hours_button">12:00</button>
+      <button id="button-13" (click)="openDialog('13:00')" class="booking-hours_button">13:00</button>
+      <button id="button-14" (click)="openDialog('14:00')" class="booking-hours_button">14:00</button>
+      <button id="button-15" (click)="openDialog('15:00')" class="booking-hours_button">15:00</button>
+      <button id="button-16" (click)="openDialog('16:00')" [disabled]="isDisable" class="booking-hours_button">16:00</button>
+      <button id="button-17" (click)="openDialog('17:00')" [disabled]="isDisable" class="booking-hours_button">17:00</button>
+      <button id="button-18" (click)="openDialog('18:00')" [disabled]="isDisable" class="booking-hours_button">18:00</button>
+      <button id="button-19" (click)="openDialog('19:00')" [disabled]="isDisable" class="booking-hours_button">19:00</button>
+      <button id="button-20" (click)="openDialog('20:00')" [disabled]="isDisable" class="booking-hours_button">20:00</button>
+      <button id="button-21" (click)="openDialog('21:00')" [disabled]="isDisable" class="booking-hours_button">21:00</button>
+    </div>
+  </section>
+
+</main>
