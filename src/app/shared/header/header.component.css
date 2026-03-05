@@ -11,7 +11,37 @@
   color: white;
 }
 
-.toolbar span a {
-  all: unset;
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+#logo img {
+  width: 5.5rem;
+}
+
+#btnBooking {
+  background-color: var(--main-color);
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#btnBooking:hover {
+  background-color: #dd7701;
+}
+
+#btnMenu {
+  background-color: white;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+#btnMenu:hover {
+  background-color: rgb(233, 233, 233);
 }

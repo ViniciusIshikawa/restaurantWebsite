@@ -1,10 +1,13 @@
 <mat-toolbar class="toolbar">
-  <span><a href="/home">Rastaurant</a></span>
+  <a id="logo" href="/home">
+    <img src="/assets/images/restaurantLogo.png" alt="Restaurant Logo">
+    <span>Restaurant</span>
+  </a>
   <span class="spacer"></span>
   <button mat-button routerLink="/home">Home</button>
   <button mat-button routerLink="/about">About</button>
   <button mat-button routerLink="/home" fragment="contact">Contact</button>
 
-  <button mat-button routerLink="/booking">BOOK NOW</button>
-  <button mat-button routerLink="/menu">MENU</button>
+  <button id="btnBooking" mat-button routerLink="/booking">BOOK NOW</button>
+  <button id="btnMenu" mat-button routerLink="/menu">MENU</button>
 </mat-toolbar>
