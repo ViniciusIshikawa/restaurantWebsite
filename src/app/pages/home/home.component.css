@@ -1,23 +1,64 @@
-.hero-section {
-  height: 100vh;
-  background-image: url('/assets/images/bg_heroSection.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  color: white;
+.btnBooking {
+  background-color: var(--main-color);
+  font-weight: bold;
 }
 
-.hero-section h1 {
+.btnMenu {
+  background-color: white;
   color: var(--main-color);
-  margin: 0;
+  font-weight: bold;
 }
 
-.hero-section .hero-section_presentation {
+.hero-section {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+  padding-left: 40px;
+  background-image:
+    linear-gradient(
+      to right,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0)
+    ),
+    url('/assets/images/bg-heroSection.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section .hero-section_presentation {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.hero-section_presentation .hero-section-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 45px;
+  color: white;
+}
+
+.hero-section-text h2 {
+  margin: 0;
+}
+
+.hero-section-text h1 {
+  font-family: "Lobster", sans-serif !important;
+  font-weight: 100;
+  font-style: normal;
+  margin: 0;
+}
+
+.hero-section .hero-section_actions {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .restaurant-brief {
