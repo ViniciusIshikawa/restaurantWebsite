@@ -6,6 +6,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import { ActivatedRoute, RouterLink } from "@angular/router";
+import { MatDivider } from "@angular/material/divider";
 
 @Component({
   selector: 'app-home',
@@ -17,7 +18,8 @@ import { ActivatedRoute, RouterLink } from "@angular/router";
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
-    RouterLink
+    RouterLink,
+    MatDivider
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
