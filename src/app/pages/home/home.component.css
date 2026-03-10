@@ -26,7 +26,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 
 .hero-section .hero-section_presentation {
@@ -92,11 +91,12 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 2rem 0;
+  padding: 2rem 5rem;
   background-color: var(--secondary-color);
 }
 
 .working-hours h1 {
+  font-size: 40px;
   margin: 0;
   text-align: center;
   color: white;
@@ -106,15 +106,72 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin: 0 1rem;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.working-hours .card mat-card-header {
-  flex-direction: column;
-  justify-content: center;
+.working-hours .working-hours_titles {
+  color: var(--main-color);
+  font-family: 'Lobster', sans-serif !important;
+  font-size: 50px;
+}
+
+.working-hours .card {
+  transform: translate3d(0, 0, 0);
+  width: 350px;
+  padding: 5px;
+  border: 2px solid #b78846;
+}
+
+.working-hours .card:before, .card:after {
+  content: "•";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+  color: #b78846;
+  border: 2px solid #b78846;
+  line-height: 12px;
+  top: 5px;
+  text-align: center;
+}
+
+.working-hours .card:before {
+  left: 5px;
+}
+.working-hours .card:after {
+  right: 5px;
+}
+
+.working-hours .card .card-inner {
+  position: relative;
+  border: 2px solid #b78846;
+  padding: 5rem;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+
+}
+.working-hours .card .card-inner:before, .card .card-inner:after {
+  content: "•";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+  color: #b78846;
+  border: 2px solid #b78846;
+  line-height: 12px;
+  bottom: -2px;
+  text-align: center;
+}
+
+.working-hours .card .card-inner:before {
+  left: -2px;
+}
+.working-hours .card .card-inner:after {
+  right: -2px;
 }
 
 .menus {
