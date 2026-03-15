@@ -34,7 +34,13 @@
     <img src="/assets/images/chefWithDish.png" alt="chef preparing our special salad">
   </section>
 
-  <mat-divider />
+  <section class="menus">
+    <div class="menus_options">
+      <a routerLink="/menu/breakfast" class="menus_options-breakfast">Breakfast</a>
+      <a routerLink="/menu/lunch" class="menus_options-lunch">Lunch</a>
+      <a routerLink="/menu/dinner" class="menus_options-dinner">Dinner</a>
+    </div>
+  </section>
 
   <section class="working-hours">
     <h1>Working Hours</h1>
@@ -66,13 +72,7 @@
     <button class="btnBooking" mat-flat-button routerLink="/booking">BOOK NOW</button>
   </section>
 
-  <section class="menus">
-    <div class="menus_options">
-      <div class="menus_options-breakfast">Breakfast</div>
-      <div class="menus_options-lunch">Lunch</div>
-      <div class="menus_options-dinner">Dinner</div>
-    </div>
-  </section>
+  <mat-divider />
 
   <section id="contact" class="contact">
     <h1>Get in Touch</h1>
