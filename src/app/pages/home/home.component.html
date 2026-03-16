@@ -77,25 +77,34 @@
   <section id="contact" class="contact">
     <h1>Get in Touch</h1>
     <div class="contact_form-maps">
-      <form action="submit">
+      <form [formGroup]="contactForm" action="submit">
         <mat-form-field>
-          <mat-label>Input</mat-label>
-          <input matInput>
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name">
         </mat-form-field>
         <mat-form-field>
-          <mat-label>Select</mat-label>
-          <mat-select>
-            <mat-option value="one">First option</mat-option>
-            <mat-option value="two">Second option</mat-option>
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label number>Phone Number</mat-label>
+          <input matInput formControlName="phoneNumber">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Subject</mat-label>
+          <mat-select formControlName="subject">
+            <mat-option value="one">Career</mat-option>
+            <mat-option value="two">Question</mat-option>
+            <mat-option value="two">Other</mat-option>
           </mat-select>
         </mat-form-field>
         <mat-form-field>
-          <mat-label>Textarea</mat-label>
-          <textarea matInput></textarea>
+          <mat-label>More</mat-label>
+          <textarea matInput formControlName="more"></textarea>
         </mat-form-field>
       </form>
       <div class="googleMaps">
-        Google MAPS
+        <div id="map"></div>
       </div>
     </div>
   </section>
