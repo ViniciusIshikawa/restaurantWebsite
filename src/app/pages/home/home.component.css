@@ -267,16 +267,29 @@
   padding: 2rem 0;
 }
 
-.contact .contact_form-maps form, .contact .contact_form-maps .googleMaps {
+.contact .contact_form-maps .googleMaps {
   display: flex;
   justify-content: center;
   align-content: center;
 }
 
-.contact .contact_form-maps form {
+.contact .contact_form-maps .form form {
+  display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+.contact .contact_form-maps .form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   width: 50%;
-  padding-left: 30px;
+  padding: 30px;
+}
+
+.mat-mdc-button-disabled {
+  opacity: 0.5 !important;
+  background-color: #ccc !important;
 }
 
 .contact .contact_form-maps .googleMaps {

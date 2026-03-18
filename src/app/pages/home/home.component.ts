@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
-import {MatCardModule} from '@angular/material/card';
-import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
@@ -9,25 +7,27 @@ import { ActivatedRoute, RouterLink } from "@angular/router";
 import { MatDivider } from "@angular/material/divider";
 import * as Leaflet from 'leaflet';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import {MatDialog, MatDialogModule} from '@angular/material/dialog';
+import { FormDialogComponent } from './form-dialog/form-dialog.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
     MatButtonModule,
-    MatCardModule,
-    MatIconModule,
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
     RouterLink,
     MatDivider,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
+  dialog = inject(MatDialog);
   contactForm!: FormGroup;
 
   constructor(
@@ -39,12 +39,12 @@ export class HomeComponent implements OnInit {
     window.scrollTo({top: 0, behavior: 'smooth'});
 
     this.contactForm = this.fb.group({
-      name: [[''], [Validators.required]],
-      email: [[''], [Validators.required, Validators.email]],
-      phoneNumber: [[''], [Validators.required, Validators.pattern(/^[0-9]+$/)]],
-      subject: [[''], [Validators.required]],
-      more: ['']
-    })
+        name: [null, [Validators.required]],
+        email: [null, [Validators.required, Validators.email]],
+        phoneNumber: [null, [Validators.required, Validators.pattern(/^[0-9]+$/)]],
+        subject: [null, [Validators.required]],
+        more: [null]
+    });
   }
 
   ngAfterViewInit() {
@@ -63,5 +63,17 @@ export class HomeComponent implements OnInit {
         document.getElementById(f)?.scrollIntoView({ behavior: 'smooth' });
       }
     });
+  }
+
+  openDialog() {
+    this.dialog.open(FormDialogComponent);
+    this.contactForm.setValue({
+        name: null,
+        email: null,
+        phoneNumber: null,
+        subject: null,
+        more: null
+    });
+    this.contactForm.markAsUntouched();
   }
 }
