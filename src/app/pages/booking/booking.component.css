@@ -10,6 +10,7 @@
 full-calendar {
   width: 50vw;
   height: 100%;
+  z-index: 0 !important;
 }
 
 .booking-hours {

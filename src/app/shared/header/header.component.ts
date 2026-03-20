@@ -3,6 +3,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { RouterLink } from "@angular/router";
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +12,8 @@ import { RouterLink } from "@angular/router";
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    RouterLink
+    RouterLink,
+    MatSidenavModule
 ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'

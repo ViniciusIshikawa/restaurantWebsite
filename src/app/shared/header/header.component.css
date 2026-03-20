@@ -2,6 +2,10 @@
   flex: 1 1 auto;
 }
 
+mat-toolbar {
+  display: none;
+}
+
 .toolbar {
   background-color: var(--secondary-color);
   color: white;
@@ -28,6 +32,7 @@
 
 #btnBooking {
   background-color: var(--main-color);
+  color: white;
   font-weight: bold;
   margin-right: 5px;
 }
@@ -44,4 +49,51 @@
 
 #btnMenu:hover {
   background-color: rgb(233, 233, 233);
+}
+
+mat-drawer-container {
+  display: none;
+}
+
+.sidenav-content {
+  position: fixed;
+  background-color: var(--secondary-color);
+  z-index: 99;
+}
+
+::ng-deep .mat-drawer-inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 50px;
+}
+
+::ng-deep .mat-drawer-transition .mat-drawer-backdrop {
+  position: fixed;
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  overflow: hidden;
+}
+
+::ng-deep .mat-drawer-content {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  mat-toolbar {
+    display: flex;
+  }
+}
+
+@media (max-width: 1024px) {
+  mat-drawer-container {
+    display: flex;
+  }
 }

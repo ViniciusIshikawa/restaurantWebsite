@@ -1,3 +1,7 @@
+button {
+  z-index: 0 !important;
+}
+
 .btnBooking {
   background-color: var(--main-color);
   font-weight: bold;
@@ -271,6 +275,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  z-index: 0 !important;
 }
 
 .contact .contact_form-maps .form form {

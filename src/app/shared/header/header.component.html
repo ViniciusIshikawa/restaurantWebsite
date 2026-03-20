@@ -11,3 +11,27 @@
   <button id="btnBooking" mat-button routerLink="/booking">BOOK NOW</button>
   <button id="btnMenu" mat-button routerLink="/menu">MENU</button>
 </mat-toolbar>
+
+<mat-drawer-container autosize>
+  <mat-drawer class="sidenav-content" #drawer mode="over">
+    <button mat-button routerLink="/home" (click)="drawer.toggle()">Home</button>
+    <button mat-button routerLink="/about" (click)="drawer.toggle()">About</button>
+    <button mat-button routerLink="/home" (click)="drawer.toggle()" fragment="contact">Contact</button>
+
+    <button id="btnBooking" mat-button routerLink="/booking" (click)="drawer.toggle()">BOOK NOW</button>
+    <button id="btnMenu" mat-button routerLink="/menu" (click)="drawer.toggle()">MENU</button>
+  </mat-drawer>
+
+  <div class="sidenav">
+    <a id="logo" href="/home">
+      <img src="/assets/images/restaurantLogo.png" alt="Restaurant Logo">
+      <span>Restaurant</span>
+    </a>
+
+    <button mat-icon-button (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+
+</mat-drawer-container>
+

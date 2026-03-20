@@ -1,5 +1,6 @@
 mat-drawer-container, mat-drawer {
   padding-top: 2rem;
+  z-index: 0 !important;
 }
 
 .drawer-container {
