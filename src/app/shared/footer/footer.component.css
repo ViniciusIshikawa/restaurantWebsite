@@ -11,9 +11,19 @@ footer {
   padding: 1rem;
 }
 
-.restaurantLogo h2 a {
+.restaurantLogo a {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
   all: unset;
   cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.restaurantLogo img {
+  width: 5.5rem;
 }
 
 .spacer {
