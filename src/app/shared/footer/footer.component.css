@@ -47,3 +47,28 @@ footer {
   height: 2rem;
   color: black;
 }
+
+
+@media (max-width: 1024px) {
+  footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .restaurantLogo a {
+    font-size: 30px;
+  }
+
+  .restaurantLogo img {
+    width: 6.5rem;
+  }
+
+  .socialMedia mat-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .pages a {
+    font-size: 20px;
+  }
+}

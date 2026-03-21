@@ -174,6 +174,7 @@ button {
 .working-hours .card .card-inner:before {
   left: -2px;
 }
+
 .working-hours .card .card-inner:after {
   right: -2px;
 }
@@ -189,17 +190,14 @@ button {
   width: 100%;
 }
 
-.menus_options-breakfast, .menus_options-lunch, .menus_options-dinner {
+.menus .menus_options-breakfast,
+.menus .menus_options-lunch,
+.menus .menus_options-dinner {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid black;
   height: 80vh;
-}
-
-.menus .menus_options-breakfast,
-.menus .menus_options-lunch,
-.menus .menus_options-dinner {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -305,4 +303,97 @@ button {
 #map {
   width: 100%;
   height: 300px;
+}
+
+@media (max-width: 1024px) {
+  .btnBooking, .btnMenu {
+    font-size: 20px;
+    height: 50px;
+  }
+
+  .hero-section {
+    justify-content: center;
+    align-items: center;
+    background-position: right;
+    padding: 0;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+      url(/assets/images/bg-heroSection.jpg);
+  }
+
+  .hero-section .hero-section_presentation {
+    text-align: center;
+    width: 100%;
+    align-items: center;
+  }
+
+  .hero-section .hero-section_actions {
+    flex-direction: column;
+  }
+
+  .restaurant-brief {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .restaurant-brief .restaurant-brief_presentation {
+    align-items: center;
+  }
+
+  .restaurant-brief .restaurant-brief_presentation span {
+    font-size: 30px;
+  }
+
+  .restaurant-brief img {
+    width: 100%;
+  }
+
+  .menus .menus_options {
+    flex-direction: column;
+  }
+
+  .menus .menus_options-breakfast,
+  .menus .menus_options-lunch,
+  .menus .menus_options-dinner {
+    width: 100%;
+    height: 300px;
+    border: none;
+  }
+
+  .menus .menus_options-breakfast::before,
+  .menus .menus_options-lunch::before,
+  .menus .menus_options-dinner::before {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .working-hours .working-hours_cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact .contact_form-maps {
+    flex-direction: column;
+  }
+
+  .contact .contact_form-maps .form {
+    width: 90%;
+    padding: 0;
+    align-items: normal;
+  }
+
+  .contact .contact_form-maps .form mat-form-field {
+    font-size: 25px;
+  }
+
+  .contact .contact_form-maps .form button {
+    font-size: 20px;
+    height: 40px;
+  }
+
+  .contact .contact_form-maps .googleMaps {
+    width: 90%;
+    padding: 20px 0;
+  }
 }
